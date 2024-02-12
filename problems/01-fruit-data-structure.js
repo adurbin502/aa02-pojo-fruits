@@ -10,7 +10,7 @@ console.log(firstFruitObject(fruits));
 */
 
 function firstFruitObject(fruits) {
-    
+    return fruits[0];
 }
 
 
@@ -24,7 +24,7 @@ console.log(lastFruitObject(fruits));
 */
 
 function lastFruitObject(fruits) {
-    // Your code here
+    return fruits[fruits.length - 1];
 }
 
 
@@ -39,7 +39,7 @@ console.log(indexFruitObject(17, fruits));
 */
 
 function indexFruitObject(index, fruits) {
-    // Your code here
+    return fruits[index];
 }
 
 
@@ -54,7 +54,9 @@ console.log(fruitNames(fruits));
 */
 
 function fruitNames(fruits) {
-    // Your code here
+    return fruits.map(fruit => {
+        return fruit.name;
+    })
 }
 
 /* 05. `getFruitKeys()` - Return a list of all of the keys for each fruit record.
@@ -65,7 +67,7 @@ NOTE: Call a function you previously wrote as a helper function.
 */
 
 function getFruitKeys(fruits) {
-    // Your code here
+    return Object.keys(fruits[0]);
 }
 
 
@@ -79,7 +81,7 @@ console.log(getNutritionsKeys(fruits));
 */
 
 function getNutritionsKeys(fruits) {
-    // Your code here
+    return Object.keys(fruits[0].nutritions);
 }
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
